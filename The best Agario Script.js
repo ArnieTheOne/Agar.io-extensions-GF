@@ -1,13 +1,17 @@
 // ==UserScript==
-// @name         The best Agario Script
-// @namespace    http://tampermonkey.net/
-// @version      1.15
-// @description  Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
-// @author       Arnie and Ali AhfadMehdi
-// @match        http://agar.io/*
-// @match        https://agar.io/*
-// @grant        none
-// @run-at       document-end
+// @name             The best Agario Script
+// @name:en          The best Agario Script
+// @name:de          Das beste Agario Skript
+// @namespace        http://tampermonkey.net/
+// @version          1.15
+// @description      Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
+// @description:de   Einfache Tastenkonfiguration im Quelltext.
+// @description:en   Easily configurable keys in the code.
+// @author           Arnie
+// @match            http://agar.io/*
+// @match            https://agar.io/*
+// @grant            none
+// @run-at           document-end
 // ==/UserScript==
 window.addEventListener('keydown', keydown);
 window.addEventListener('keyup', keyup);
@@ -155,13 +159,7 @@ MRreloadButton.addEventListener('click', function(){
 })
 
 /*
-Script by Ali Ahfad Mehdi modified by Arnie
+Script by Ali Ahfad Mehdi and Arnie
 
-Changes:
-    instructions added
-    respawn button added
-    keys changed (you can get keycodes on http://keycode.info/ ☺)
-	reload button to the start page added
-    reload button to the Match Results page added
-CREDITS TO: JACK BURCH, TOM BURRIS on Greasyfork.org
+CREDITS TO: JACK BURCH, TOM BURRIS
 */
