@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         THE_ULTIMATE_Agario_Script (Modification)
+// @name         The best Agario Script
 // @namespace    http://tampermonkey.net/
 // @version      1.15
-// @description  'W' is Macro, 'Shift' and '4' is Tricksplit, 'A' is Triplesplit, 'D' is Doublesplit, 'Left Click' is Space, 'Right Click' is Feed/Macro, 'Mouse Click' is Tricksplit. Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
-// @author       
+// @description  Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
+// @author       Arnie and Ali AhfadMehdi
 // @match        http://agar.io/*
 // @match        https://agar.io/*
 // @grant        none
