@@ -14,3 +14,6 @@ This extension change some thisgs on <a href="agar.io">Agario</a>.
 <div>
 The default keys (<b>W</b> one food and <b>space</b> split) will still work.
 </div>
+<div>
+I added a reload button to the start page. To the Match Results page I added too a reload button and a respawn button to respawn directly.
+</div>
