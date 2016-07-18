@@ -1,4 +1,3 @@
-<div id="extension">
 # Agar.io-extension-GF
 This extension change some thisgs on <a href="agar.io">Agario</a>.
 <div id="install_script">
@@ -35,5 +34,4 @@ This extension change some thisgs on <a href="agar.io">Agario</a>.
   <p>
   I added a reload button to the start page. To the Match Results page I added too a reload button and a respawn button to respawn directly.
   </p>
-</div>
 </div>
