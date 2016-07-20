@@ -109,9 +109,9 @@ exInstructions.id = 'exInstructions';
 exInstructionsAlign.appendChild(exInstructions);
 instructions.appendChild(exInstructionsAlign);
 
-$('#exInstructions').css({'color':'#777'});
+$('#exInstructions').css({'color':'#777','cusor':'auto'});
 $('#statsContinue').css({'width':'146px'});
-
+$('#canvas').css({'cusor':'crosshair'})
 
 //create a respawn button
 var respawn = document.createElement('button');
