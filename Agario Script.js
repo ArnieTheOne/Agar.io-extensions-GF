@@ -109,9 +109,9 @@ exInstructions.id = 'exInstructions';
 exInstructionsAlign.appendChild(exInstructions);
 instructions.appendChild(exInstructionsAlign);
 
-$('#exInstructions').css({'color':'#777','cusor':'auto'});
+$('#exInstructions').css({'color':'#777','cursor':'auto'});
 $('#statsContinue').css({'width':'146px'});
-$('#canvas').css({'cusor':'crosshair'})
+$('#canvas').css({'cursor':'crosshair'})
 
 //create a respawn button
 var respawn = document.createElement('button');
@@ -120,7 +120,7 @@ respawn.innerHTML = 'Respawn';
 respawn.addEventListener('click', function(){MC.setNick(document.getElementById('nick').value); return false;});
 respawn.id = 'respawnButton';
 $(document).ready(function(){
-	$('#respawnButton').css({'display':'inline-block','padding':'6px 12px','marginBottom':'0','fontSize':'14px','fontWeight':'400','lineHeight':'1.42857143','textAlign':'center','whiteSpace':'mowrap','verticalAlign':'middle','cusor':'pointer','border':'1px solid transparent','borderRadius':'4px','color':'#fff','backgroundColor':'#428bca','borderColor':'#357ebd','position':'absolute','right':'25px','width':'150px','bottom':'15px'});
+	$('#respawnButton').css({'display':'inline-block','padding':'6px 12px','marginBottom':'0','fontSize':'14px','fontWeight':'400','lineHeight':'1.42857143','textAlign':'center','whiteSpace':'mowrap','verticalAlign':'middle','cursor':'pointer','border':'1px solid transparent','borderRadius':'4px','color':'#fff','backgroundColor':'#428bca','borderColor':'#357ebd','position':'absolute','right':'25px','width':'150px','bottom':'15px'});
 });
 
 //add the respawn button to Agar.io
@@ -151,7 +151,7 @@ var MRreloadButton = document.createElement('button');
 MRreloadButton.id = 'MRreloadButton';
 MRreloadButton.innerHTML = 'Reload';
 stats.appendChild(MRreloadButton);
-$('#MRreloadButton').css({'position':'absolute','left':'25px','right':'25px','bottom':'95px','width':'300px','color':'#fff','backgroundColor':'#428bca','borderColor':'#357ebd','display':'inline-block','padding':'6px 12px','marginBottom':'0','fontSize':'14px','fontWeight':'400','lineHeight':'1.42857143','textAlign':'center','whiteSpace':'nowrap','varticalAlign':'middle','cusor':'pointer','border':'1px solid transparent','borderRadius':'4px','overflow':'visible','boxSizing':'borderBox'})
+$('#MRreloadButton').css({'position':'absolute','left':'25px','right':'25px','bottom':'95px','width':'300px','color':'#fff','backgroundColor':'#428bca','borderColor':'#357ebd','display':'inline-block','padding':'6px 12px','marginBottom':'0','fontSize':'14px','fontWeight':'400','lineHeight':'1.42857143','textAlign':'center','whiteSpace':'nowrap','varticalAlign':'middle','cursor':'pointer','border':'1px solid transparent','borderRadius':'4px','overflow':'visible','boxSizing':'borderBox'})
 $('#stats canvas').css({'bottom':'140px'});
 $('#stats').css({'height':'310px'});
 MRreloadButton.addEventListener('click', function(){
