@@ -3,7 +3,7 @@
 // @name:en          The ULTIMATE Agario Script [v2.1]
 // @name:de          Das ULTIMATIVE Agario Skript [v2.1]
 // @namespace        http://tampermonkey.net/
-// @version          2.1
+// @version          2.2
 // @description      Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
 // @description:de   Einfache Tastenkonfiguration im Quelltext.
 // @description:en   Easily configurable keys in the code.
