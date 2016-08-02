@@ -1,17 +1,17 @@
 // ==UserScript==
-// @name             The ULTIMATE Agario Script [v2.2]
-// @name:en          The ULTIMATE Agario Script [v2.2]
-// @name:de          Das ULTIMATIVE Agario Skript [v2.2]
-// @namespace        http://tampermonkey.net/
-// @version          2.2
-// @description      Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
-// @description:de   Einfache Tastenkonfiguration im Quelltext.
-// @description:en   Easily configurable keys in the code.
-// @author           Arnie
-// @match            http://agar.io/*
-// @match            https://agar.io/*
-// @grant            none
-// @run-at           document-end
+// @name		The ULTIMATE Agario Script [v2.2]
+// @name:en		The ULTIMATE Agario Script [v2.2]
+// @name:de		The ULTIMATE Agario Script [v2.2]
+// @namespace		http://tampermonkey.net/
+// @version		2.2
+// @description		Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
+// @description:de	Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
+// @author		Arnie
+// @match		http://agar.io/*
+// @match		https://agar.io/*
+// @grant		none
+// @run-at		document-end
+// @require		https://greasyfork.org/scripts/21918-color-changer/code/color%20changer.js?version=139529
 // ==/UserScript==
 window.addEventListener('keydown', keydown);
 window.addEventListener('keyup', keyup);
@@ -109,7 +109,7 @@ exInstructions.id = 'exInstructions';
 exInstructionsAlign.appendChild(exInstructions);
 instructions.appendChild(exInstructionsAlign);
 
-$('#exInstructions').css({'color':'#777','cursor':'auto'});
+$('#exInstructions').css({'color':'#777','cursor':'default'});
 $('#statsContinue').css({'width':'146px'});
 $('#canvas').css({'cursor':'crosshair'})
 
@@ -137,7 +137,7 @@ reloadButton.addEventListener('click', function(){
 });
 
 $(document).ready(function(){
-	$('#reloadButton').css({'display':'block','float':'right','height':'37px','width':'110px','fontWeight':'700','color':'#fff','backgroundColor':'#354c8c','borderColor':'#354c8c','borderRadius':'5px'});
+	$('#reloadButton').css({'display':'block','float':'right','height':'37px','width':'110px','fontWeight':'700','color':'#fff','backgroundColor':'#428bca','borderColor':'#357ebd','borderRadius':'5px'});
 });
 
 //add the reload button to Agario start page
@@ -157,6 +157,15 @@ $('#stats').css({'height':'310px'});
 MRreloadButton.addEventListener('click', function(){
   location.reload()
 })
+
+//new agar.io style
+/*
+syntax:
+changeColor("font", "bg", "id", "class")
+*/
+$('hr').css({'width':'0px'});
+changeColor("white", "rgba(0, 0, 0, 0.5)", "", "agario-panel");
+changeColor("rgba(0, 0, 0, 1)", "white", "", "agario-wallet-container")
 
 /*
 Script by Ali Ahfad Mehdi and Arnie
