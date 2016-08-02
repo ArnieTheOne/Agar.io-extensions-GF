@@ -172,9 +172,7 @@ changeColor("rgba(0, 0, 0, 1)", "white", "", "agario-wallet-container");
 $('.text-muted')[1].style.color = 'white';
 
 //'hide' advertisement
-$(document).ready({
-	$('#advertisement').css({'position':'absolute','left':'-100%'})
-});
+$('#advertisement').css({'position':'absolute','left':'-100%'})
 
 /*
 Script by Ali Ahfad Mehdi and Arnie
