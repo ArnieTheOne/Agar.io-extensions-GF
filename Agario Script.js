@@ -101,7 +101,7 @@ function keyup(event) {
 }());
 
 
-//add new instructions about the Script to Agar.io
+//create and add new instructions about the Script to Agar.io
 var exInstructions = document.createElement('span');
 var exInstructionsAlign = document.createElement('center');
 exInstructions.innerHTML = '<br><u><b>Ultimate Agar.io Script controlls:</b></u><br>Press <b>Q</b> to feed macro<br>Press <b>A</b> to triplesplit<br>Press <b>D</b> to doublesplit<br>Press <b>S</b> to center your cell(s)<br><b>left click</b> to split<br><b>mouse click</b> to tricksplit<br><b>right click</b> to macro feed';
@@ -109,7 +109,8 @@ exInstructions.id = 'exInstructions';
 exInstructionsAlign.appendChild(exInstructions);
 instructions.appendChild(exInstructionsAlign);
 
-$('#exInstructions').css({'color':'#777','cursor':'default'});
+$('#exInstructions').css({'color':'#fff','cursor':'default'});
+$('#exInstructionsAlign').css({'color':'#fff','cursor':'default'});
 $('#statsContinue').css({'width':'146px'});
 $('#canvas').css({'cursor':'crosshair'})
 
@@ -132,6 +133,7 @@ var reloadButton = document.createElement("button");
 var nbstyle = reloadButton.style;
 reloadButton.innerHTML = 'Reload';
 reloadButton.id = 'reloadButton'
+reloadButton.class = 'btn'
 reloadButton.addEventListener('click', function(){
 	location.reload()
 });
@@ -158,14 +160,18 @@ MRreloadButton.addEventListener('click', function(){
   location.reload()
 })
 
-//new agar.io style
 /*
+new agar.io style
 syntax:
-changeColor("font", "bg", "id", "class")
+changeColor("font", "bgColor", "id", "class")
 */
-$('hr').css({'width':'0px'});
+
+$('hr').css({'width':'0px','height':'0px'});
 changeColor("white", "rgba(0, 0, 0, 0.5)", "", "agario-panel");
 changeColor("rgba(0, 0, 0, 1)", "white", "", "agario-wallet-container")
+
+//'hide' advertisement
+$('#advertisement').css({'position':'absolute','left':'-100%'})
 
 /*
 Script by Ali Ahfad Mehdi and Arnie
