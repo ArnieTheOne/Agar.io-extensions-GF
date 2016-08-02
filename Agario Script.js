@@ -173,6 +173,7 @@ changeColor("rgba(0, 0, 0, 1)", "white", "", "agario-wallet-container")
 //'hide' advertisement
 $('#advertisement').css({'position':'absolute','left':'-100%'})
 
+$('#settings').css({'height':'220px'})
 /*
 Script by Ali Ahfad Mehdi and Arnie
 
