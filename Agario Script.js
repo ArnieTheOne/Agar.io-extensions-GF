@@ -170,6 +170,7 @@ $('hr').css({'width':'0px','height':'0px'});
 changeColor("white", "rgba(0, 0, 0, 0.5)", "", "agario-panel");
 changeColor("rgba(0, 0, 0, 1)", "white", "", "agario-wallet-container");
 $('.text-muted')[1].style.color = 'white';
+$('span').css({'color':'white'});
 
 //'hide' advertisement
 $('#advertisement').css({'position':'absolute','left':'-100%'})
