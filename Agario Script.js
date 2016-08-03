@@ -168,7 +168,7 @@ changeColor("id", "class", "bgColor", "fontColor")
 */
 
 $('hr').css({"width":"0px","height":"0px"});
-changeColor("", "agario-panel", "rgba(0, 0, 0, 0.5)", "white");
+changeColor("", "agario-panel", "rgba(0, 0, 0, 0.75)", "white");
 changeColor("", "agario-wallet-container", "white", "black");
 changeColor("stats", "", "", "white");
 $('span').css({'color':'white'})
