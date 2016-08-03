@@ -11,7 +11,8 @@
 // @match		https://agar.io/*
 // @grant		none
 // @run-at		document-end
-// @require		https://greasyfork.org/scripts/21918-color-changer/code/color%20changer.js?version=139529
+// @require		https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
+// @require		https://raw.githubusercontent.com/ArnieTheOne/useful-functions/master/Functions.js
 // ==/UserScript==
 window.addEventListener('keydown', keydown);
 window.addEventListener('keyup', keyup);
@@ -163,14 +164,14 @@ MRreloadButton.addEventListener('click', function(){
 /*
 new agar.io style
 syntax:
-changeColor("font", "bgColor", "id", "class")
+changeColor("id", "class", "bgColor", "fontColor")
 */
 
-$('hr').css({'width':'0px','height':'0px'});
-changeColor("white", "rgba(0, 0, 0, 0.5)", "", "agario-panel");
-changeColor("rgba(0, 0, 0, 1)", "white", "", "agario-wallet-container");
-$('.text-muted')[1].style.color = 'white';
-$('span').css({'color':'white'});
+$('hr').css({"width":"0px","height":"0px"});
+changeColor("", "agario-panel", "rgba(0, 0, 0, 0.5)", "white");
+changeColor("", "agario-wallet-container", "white", "black");
+changeColor("stats", "", "", "white");
+$('span').css({'color':'white'})
 
 //'hide' advertisement
 $('#advertisement').css({'position':'absolute','left':'-100%'})
