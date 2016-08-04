@@ -3,7 +3,7 @@
 // @name:en		The ULTIMATE Agario Script
 // @name:de		The ULTIMATE Agario Script
 // @namespace		http://tampermonkey.net/
-// @version		2.2
+// @version		2.3
 // @description		Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
 // @description:de	Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
 // @author		Arnie
@@ -166,18 +166,16 @@ new agar.io style
 syntax:
 changeColor("font", "bgColor", "id", "class")
 */
-/*
+
 $('hr').css({'width':'0px','height':'0px'});
 changeColor("white", "rgba(0, 0, 0, 0.5)", "", "agario-panel");
 changeColor("rgba(0, 0, 0, 1)", "white", "", "agario-wallet-container");
 $('.text-muted')[1].style.color = 'white';
 $('span').css({'color':'white'});
-
 //'hide' advertisement
 $('#advertisement').css({'position':'absolute','left':'-100%'})
-*/
+
 /*
 Script by Ali Ahfad Mehdi and Arnie
-
 CREDITS TO: JACK BURCH, TOM BURRIS
 */
