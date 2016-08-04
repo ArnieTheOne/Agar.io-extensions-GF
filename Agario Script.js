@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name		The ULTIMATE Agario Script [v2.2]
-// @name:en		The ULTIMATE Agario Script [v2.2]
-// @name:de		The ULTIMATE Agario Script [v2.2]
+// @name		The ULTIMATE Agario Script
+// @name:en		The ULTIMATE Agario Script
+// @name:de		The ULTIMATE Agario Script
 // @namespace		http://tampermonkey.net/
 // @version		2.21
 // @description		Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
@@ -112,7 +112,8 @@ instructions.appendChild(exInstructionsAlign);
 $('#exInstructions').css({'color':'#fff','cursor':'default'});
 $('#exInstructionsAlign').css({'color':'#fff','cursor':'default'});
 $('#statsContinue').css({'width':'146px'});
-$('#canvas').css({'cursor':'crosshair'})
+$('#canvas').css({'cursor':'crosshair'});
+$('span').css({'color':'#fff'});
 
 //create a respawn button
 var respawn = document.createElement('button');
@@ -165,11 +166,11 @@ new agar.io style
 syntax:
 changeColor("font", "bgColor", "id", "class")
 */
-/*
+
 $('hr').css({'width':'0px','height':'0px'});
 changeColor("white", "rgba(0, 0, 0, 0.5)", "", "agario-panel");
 changeColor("rgba(0, 0, 0, 1)", "white", "", "agario-wallet-container")
-*/
+
 //'hide' advertisement
 $('#advertisement').css({'position':'absolute','left':'-100%'})
 
