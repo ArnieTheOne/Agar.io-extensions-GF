@@ -3,7 +3,7 @@
 // @name:en		The ULTIMATE Agario Script
 // @name:de		The ULTIMATE Agario Script
 // @namespace		http://tampermonkey.net/
-// @version		2.3
+// @version		2.2
 // @description		Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
 // @description:de	Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
 // @author		Arnie
@@ -11,13 +11,13 @@
 // @match		https://agar.io/*
 // @grant		none
 // @run-at		document-end
-// @require		https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
-// @require 		https://greasyfork.org/scripts/22002-usefull-functions/code/usefull%20functions.js?version=139945
+// @require		https://greasyfork.org/scripts/21918-color-changer/code/color%20changer.js?version=139529
 // ==/UserScript==
+
 window.addEventListener('keydown', keydown);
 window.addEventListener('keyup', keyup);
 var Feed = false;
-var Speed = 10; //default = 25
+var Speed = 10;
 var splits = 1;
 
 //Funtions
@@ -110,8 +110,8 @@ exInstructions.id = 'exInstructions';
 exInstructionsAlign.appendChild(exInstructions);
 instructions.appendChild(exInstructionsAlign);
 
-$('#exInstructions').css({'color':'#fff','cursor':'default'});
-$('#exInstructionsAlign').css({'color':'#fff','cursor':'default'});
+$('#exInstructions').css({'color':'#777','cursor':'default'});
+$('#exInstructionsAlign').css({'color':'#777','cursor':'default'});
 $('#statsContinue').css({'width':'146px'});
 $('#canvas').css({'cursor':'crosshair'})
 
@@ -164,18 +164,18 @@ MRreloadButton.addEventListener('click', function(){
 /*
 new agar.io style
 syntax:
-changeColor("id", "class", "bgColor", "fontColor")
-
-
-$('hr').css({"width":"0px","height":"0px"});
-changeColor("", "agario-panel", "rgba(0, 0, 0, 0.75)", "white");
-changeColor("", "agario-wallet-container", "white", "black");
-changeColor("stats", "", "", "white");
-$('span').css({'color':'white'})
+changeColor("font", "bgColor", "id", "class")
+*/
+/*
+$('hr').css({'width':'0px','height':'0px'});
+changeColor("white", "rgba(0, 0, 0, 0.5)", "", "agario-panel");
+changeColor("rgba(0, 0, 0, 1)", "white", "", "agario-wallet-container");
+$('.text-muted')[1].style.color = 'white';
+$('span').css({'color':'white'});
 
 //'hide' advertisement
 $('#advertisement').css({'position':'absolute','left':'-100%'})
-
+*/
 /*
 Script by Ali Ahfad Mehdi and Arnie
 
