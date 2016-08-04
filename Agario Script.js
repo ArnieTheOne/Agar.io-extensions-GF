@@ -12,7 +12,7 @@
 // @grant		none
 // @run-at		document-end
 // @require		https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
-// @require		https://raw.githubusercontent.com/ArnieTheOne/useful-functions/master/Functions.js
+// @require		https://raw.githubusercontent.com/ArnieTheOne/useful-functions/master/functions.js
 // ==/UserScript==
 window.addEventListener('keydown', keydown);
 window.addEventListener('keyup', keyup);
