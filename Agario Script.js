@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name		The ULTIMATE Agario Script
-// @name:en		The ULTIMATE Agario Script
-// @name:de		The ULTIMATE Agario Script
+// @name		The ULTIMATE Agario Script [v2.2]
+// @name:en		The ULTIMATE Agario Script [v2.2]
+// @name:de		The ULTIMATE Agario Script [v2.2]
 // @namespace		http://tampermonkey.net/
 // @version		2.21
 // @description		Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
@@ -13,11 +13,10 @@
 // @run-at		document-end
 // @require		https://greasyfork.org/scripts/21918-color-changer/code/color%20changer.js?version=139529
 // ==/UserScript==
-
 window.addEventListener('keydown', keydown);
 window.addEventListener('keyup', keyup);
 var Feed = false;
-var Speed = 10;
+var Speed = 10; //default = 25
 var splits = 1;
 
 //Funtions
@@ -110,8 +109,8 @@ exInstructions.id = 'exInstructions';
 exInstructionsAlign.appendChild(exInstructions);
 instructions.appendChild(exInstructionsAlign);
 
-$('#exInstructions').css({'color':'#777','cursor':'default'});
-$('#exInstructionsAlign').css({'color':'#777','cursor':'default'});
+$('#exInstructions').css({'color':'#fff','cursor':'default'});
+$('#exInstructionsAlign').css({'color':'#fff','cursor':'default'});
 $('#statsContinue').css({'width':'146px'});
 $('#canvas').css({'cursor':'crosshair'})
 
@@ -169,15 +168,75 @@ changeColor("font", "bgColor", "id", "class")
 /*
 $('hr').css({'width':'0px','height':'0px'});
 changeColor("white", "rgba(0, 0, 0, 0.5)", "", "agario-panel");
-changeColor("rgba(0, 0, 0, 1)", "white", "", "agario-wallet-container");
-$('.text-muted')[1].style.color = 'white';
-$('span').css({'color':'white'});
-
+changeColor("rgba(0, 0, 0, 1)", "white", "", "agario-wallet-container")
+*/
 //'hide' advertisement
 $('#advertisement').css({'position':'absolute','left':'-100%'})
-*/
+
+$('#settings').css({'height':'220px'})
+
+// =========================options=================================
+var UASoptions = document.createElement('left');
+UASoptions.name = 'UASoptions';
+UASoptions.id = 'UASoptions';
+var UASform = document.createElement('form');
+UASform.name = 'selectTheme';
+var darkLabel = document.createElement('label');
+var extremeDarkLabel = document.createElement('label');
+var defaultLabel = document.createElement('label');
+var darkRadio = document.createElement('input');
+var extremeDarkRadio = document.createElement('input');
+var defaultRadio = document.createElement('input');
+var darkSpan = document.createElement('span');
+var extremeDarkSpan = document.createElement('span');
+var defaultSpan = document.createElement('span');
+
+darkLabel.name = 'darkLabel';
+darkLabel.id = 'darkLabel';
+extremeDarkLabel.name = 'extremeDarkLabel';
+extremeDarkLabel.id = 'extremeDatkLabel';
+defaultLabel.name = 'defaultLabel';
+defaultLabel.id = 'defaultLabel';
+darkRadio.type = 'radio';
+//darkRadio.name = 'dark';
+darkRadio.name = 'theme';
+darkRadio.value = 'dark';
+extremeDarkRadio.type = 'radio';
+//extremeDarkRadio.name = 'extremeDark';
+extremeDarkRadio.name = 'theme';
+extremeDarkRadio.value = 'extremeDark';
+defaultRadio.type = 'radio';
+//defaultRadio.name = 'default';
+defaultRadio.name = 'theme';
+defaultRadio.value = 'default';
+darkSpan.innerHTML = 'dark theme';
+extremeDarkSpan.innerHTML = 'extreme Dark theme';
+defaultSpan.innerHTML = 'default theme';
+
+
+
+//darkLabel.appendChild(darkRadio);
+//darkLabel.appendChild(darkSpan);
+//extremeDarkLabel.appendChild(extremeDarkRadio);
+//extremeDarkLabel.appendChild(extremeDarkSpan);
+//defaultLabel.appendChild(defaultRadio);
+//defaultLabel.appendChild(defaultSpan);
+
+UASform.appendChild(/*darkLabel*/darkRadio);
+UASform.appendChild(darkSpan)
+UASform.appendChild(document.createElement('br'));
+UASform.appendChild(/*extremeDarkLabel*/extremeDarkRadio);
+UASform.appendChild(extremeDarkSpan)
+UASform.appendChild(document.createElement('br'));
+UASform.appendChild(/*defaultLabel*/defaultRadio);
+UASform.appendChild(defaultSpan)
+UASform.appendChild(document.createElement('br'));
+UASoptions.appendChild(UASform);
+$('#options').append(UASoptions);
+$('#UASoptions').css({'position':'relative','left':'-25%','top':'10px'});
+
+// ================================================================
 /*
 Script by Ali Ahfad Mehdi and Arnie
-
 CREDITS TO: JACK BURCH, TOM BURRIS
 */
