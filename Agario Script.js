@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name		The ULTIMATE Agario Script [v2.2]
-// @name:en		The ULTIMATE Agario Script [v2.2]
-// @name:de		The ULTIMATE Agario Script [v2.2]
+// @name		The ULTIMATE Agario Script
+// @name:en		The ULTIMATE Agario Script
+// @name:de		The ULTIMATE Agario Script
 // @namespace		http://tampermonkey.net/
-// @version		2.2
+// @version		2.3
 // @description		Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
 // @description:de	Easily configurable keys in code. Credits to Jack Burch, Tom Burris AND Ali Ahfad Mehdi
 // @author		Arnie
