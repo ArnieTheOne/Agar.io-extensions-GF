@@ -165,7 +165,7 @@ MRreloadButton.addEventListener('click', function(){
 new agar.io style
 syntax:
 changeColor("id", "class", "bgColor", "fontColor")
-*/
+
 
 $('hr').css({"width":"0px","height":"0px"});
 changeColor("", "agario-panel", "rgba(0, 0, 0, 0.75)", "white");
