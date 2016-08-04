@@ -12,7 +12,6 @@
 // @grant		none
 // @run-at		document-end
 // @require		https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
-// @require		https://raw.githubusercontent.com/ArnieTheOne/useful-functions/master/functions.js
 // ==/UserScript==
 window.addEventListener('keydown', keydown);
 window.addEventListener('keyup', keyup);
@@ -32,6 +31,33 @@ function mass() {
         setTimeout(mass, Speed);
     }
 }
+
+function changeColor(objId, objClass, bg, font){
+    if(objClass == undefined || objClass == "" || objClass == ''){
+        if(objId.charAt(0) == '#'){
+            $(objId).css({'color':font, 'backgroundColor':bg});
+        }else if(objId.charAt(0) != '#'){
+            $('#' + objId).css({'color':font, 'backgroundColor':bg});
+        }
+    }else if(objId == undefined || objId == "" || objId == ''){
+        if(objClass.charAt(0) == '.'){
+            $(objClass).css({'color':font, 'backgroundColor':bg});
+        }else if (objClass.charAt(0) != '.'){
+            $('.' + objClass).css({'color':font, 'backgroundColor':bg});
+        }
+    }else if(objId != '' || objId != "" || objId != undefined && objClass != '' || objClass != "" || objClass != undefined){
+        if(objId.charAt(0) == '#'){
+            $(objId).css({'color':font, 'backgroundColor':bg});
+        }else if (objId.charAt(0) != '#'){
+            $('#' + objId).css({'color':font, 'backgroundColor':bg});
+        }
+        if(objClass.charAt(0) == '.'){
+            $(objClass).css({'color':font, 'backgroundColor':bg});
+        }else if(objClass.charAt(0) != '.'){
+            $('.' + objClass).css({'color':font, 'backgroundColor':bg});
+        }
+    }
+};
 
 function keydown(event) {
     // Feed Macro
