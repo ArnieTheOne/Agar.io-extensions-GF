@@ -165,11 +165,11 @@ new agar.io style
 syntax:
 changeColor("font", "bgColor", "id", "class")
 */
-
+/*
 $('hr').css({'width':'0px','height':'0px'});
 changeColor("white", "rgba(0, 0, 0, 0.5)", "", "agario-panel");
 changeColor("rgba(0, 0, 0, 1)", "white", "", "agario-wallet-container")
-
+*/
 //'hide' advertisement
 $('#advertisement').css({'position':'absolute','left':'-100%'})
 
